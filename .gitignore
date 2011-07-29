@@ -1,0 +1,6 @@
+# ignore any files beginning with .
+\.*
+Thumbs.db
+# except do not ignore .gitignore
+!.gitignore
+!.htaccess
