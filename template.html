@@ -39,12 +39,20 @@
 		text-transform:uppercase;
 	}
 	
+	#special div.subheadline{
+		color:#fec12d;
+	}
+	
 	h2{
 		color:#112d87;
 		font-size:24px;
 		font-weight:bold;
 		margin:0;
 		text-transform:uppercase;
+	}
+	
+	#special h2{
+		color:#fec12d;
 	}
 	
 	.content{
@@ -180,7 +188,7 @@
 		</table>
 		
 		<!--// NEWS-ITEM \\ -->
-		<table width="700" cellpadding="0" cellspacing="0" border="0" mc:repeatable="news_item">
+		<table width="700" cellpadding="0" cellspacing="0" border="0" mc:repeatable="news_item" mc:variant="ohne Bild">
 			
 			<!-- Abstand zwischen den Items -->
 			<tr>
@@ -238,28 +246,202 @@
 								<div class="content" mc:edit="content">
 									Inhalt
 								</div>
-								<!--div mc:repeatable="Ohne Bild">
-									<div class="content" mc:edit="content_noimg">
-										Inhalt
-									</div>
-								</div>
-								<div mc:repeatable="Mit Bild">
-									<table width="580" cellpadding="0" cellspacing="0" border="0">
-										<tr>
-											<td width="190" valign="top">
-												<img width="190" mc:edit="content_image" />
-											</td>
-											<td width="25" valign="top">
-												<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="25"/>
-											</td>
-											<td width="365" valign="top">
-												<div class="content" mc:edit="content_img">
-													Inhalt
-												</div>
-											</td>
-										</tr>
-									</table>
-								</div-->
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="25"/>
+							</td>
+							<td width="580" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="579" height="25"/>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="25"/>
+							</td>
+						</tr>
+					</table>
+					
+				</td>
+			<!-- /HAUPTINHALT -->
+				<td width="30" valign="top" style="border-left:2px solid #ccc;">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+				</td>
+			</tr>
+			
+		</table>
+		
+		<!--// NEWS-ITEM MIT BILD \\ -->
+		<table width="700" cellpadding="0" cellspacing="0" border="0" mc:repeatable="news_item" mc:variant="mit Bild">
+			
+			<!-- Abstand zwischen den Items -->
+			<tr>
+				<td width="30" valign="top" height="20">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="20"/>
+				</td>
+				<td width="640" valign="top" height="20">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="639" height="20"/>
+				</td>
+				<td width="30" valign="top" height="20">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="20"/>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width="30" valign="top" style="border-right:2px solid #ccc;">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+				</td>
+			<!-- HAUTPINHALT -->
+				<td width="640" valign="top" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc" bgcolor="#ffffff">
+					<!-- Stempel und Überschrift -->
+					<table width="640" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="125" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/stamp_blue.gif"/>
+							</td>
+							<td width="485" valign="middle">
+								<div class="subheadline" mc:edit="subheadline">Subheadline</div>
+								<h2 mc:edit="headline_2">Headline</h2>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="125" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="124" height="25"/>
+							</td>
+							<td width="485" valign="middle">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="485" height="25"/>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+						</tr>
+					</table>
+					
+					<!-- Inhalt -->
+					<table width="640" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+							<td width="580" valign="top">
+								<table width="580" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td width="190" valign="top">
+											<img width="190" mc:edit="content_image" />
+										</td>
+										<td width="25" valign="top">
+											<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="25"/>
+										</td>
+										<td width="365" valign="top">
+											<div class="content" mc:edit="content">
+												Inhalt
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="25"/>
+							</td>
+							<td width="580" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="579" height="25"/>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="25"/>
+							</td>
+						</tr>
+					</table>
+					
+				</td>
+			<!-- /HAUPTINHALT -->
+				<td width="30" valign="top" style="border-left:2px solid #ccc;">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+				</td>
+			</tr>
+			
+		</table>
+		
+		<!--// SPECIAL NEWS-ITEM \\ -->
+		<table width="700" id="special" cellpadding="0" cellspacing="0" border="0" mc:repeatable="special_news_item">
+			
+			<!-- Abstand zwischen den Items -->
+			<tr>
+				<td width="30" valign="top" height="20">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="20"/>
+				</td>
+				<td width="640" valign="top" height="20">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="639" height="20"/>
+				</td>
+				<td width="30" valign="top" height="20">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30" height="20"/>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width="30" valign="top" style="border-right:2px solid #ccc;">
+					<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+				</td>
+			<!-- HAUTPINHALT -->
+				<td width="640" valign="top" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc" bgcolor="#ffffff">
+					<!-- Stempel und Überschrift -->
+					<table width="640" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="125" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/stamp_yellow.gif"/>
+							</td>
+							<td width="485" valign="middle">
+								<div class="subheadline" mc:edit="subheadline">Subheadline</div>
+								<h2 mc:edit="headline_2">Headline</h2>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+						</tr>
+						<tr>
+							<td width="125" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="124" height="25"/>
+							</td>
+							<td width="485" valign="middle">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="485" height="25"/>
+							</td>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+						</tr>
+					</table>
+					
+					<!-- Inhalt -->
+					<table width="640" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="30" valign="top">
+								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
+							</td>
+							<td width="580" valign="top">
+								<table width="580" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td width="190" valign="top">
+											<img width="190" mc:edit="content_image" />
+										</td>
+										<td width="25" valign="top">
+											<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="25"/>
+										</td>
+										<td width="365" valign="top">
+											<div class="content" mc:edit="content_img">
+												Inhalt
+											</div>
+										</td>
+									</tr>
+								</table>
 							</td>
 							<td width="30" valign="top">
 								<img src="http://ffe-online.de/img/mailchimp/blank.gif" alt=" " width="30"/>
